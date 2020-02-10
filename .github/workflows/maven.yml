@@ -16,7 +16,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name : List Dir
-      run : ls -l /home/runner/work/TestFileAccess/TestFileAccess
+      run : ls -l /home/runner/work/TestFileAccess/TestFileAccess/target
     - uses: actions/download-artifact@v1
       with:
        name: my-artifact
