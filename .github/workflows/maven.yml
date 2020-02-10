@@ -26,4 +26,4 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
        name: ActionDemo-0.0.1-SNAPSHOT.jar
-       path: target
+       path: target/ActionDemo-0.0.1-SNAPSHOT.jar
