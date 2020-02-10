@@ -19,6 +19,7 @@ jobs:
       run : ls -l /home/runner/work/TestFileAccess/TestFileAccess/target
     - uses: actions/download-artifact@v1
       with:
-       name: my-artifact
+       name: ActionDemo-0.0.1-SNAPSHOT.jar
+       path: target
     
-    - run: cat my-artifact
+    - run: cat ActionDemo-0.0.1-SNAPSHOT.jar
