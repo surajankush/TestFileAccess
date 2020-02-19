@@ -24,14 +24,12 @@ jobs:
     - name: Generate build number
       uses: einaregilsson/build-number@v2 
       with:
-        token: ${{secrets.github_token}}        
-    - name: Print new build number
-      run: echo "Build number is $BUILD_NUMBER"
+        token: ${{secrets.github_token}}     
     
   #  - run: cat ActionDemo-0.0.1-SNAPSHOT.jar
     - uses: actions/upload-artifact@v1
       with:
-       name: ActionDemo-BUILD_NUMBER.jar
+       name: ActionDemo-$BUILD_NUMBER.jar
        path: target/ActionDemo-0.0.1-SNAPSHOT.jar
        
    
